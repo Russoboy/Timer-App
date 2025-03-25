@@ -20,7 +20,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin: 20px 0;
-    letter-spacing: 2px; /* Makes the numbers look visually better */
+    letter-spacing: 2px;
 }
 
 .controls button {
@@ -32,21 +32,19 @@ body {
     cursor: pointer;
 }
 
-#start-btn {
-    background: #4CAF50;
-    color: white;
+#start-btn { background: #4CAF50; color: white; }
+#pause-btn { background: #FFC107; color: white; }
+#reset-btn { background: #F44336; color: white; }
+#start-countdown { background: blue; color: white; font-size: 1rem; margin: 5px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+#resume-btn{ background: rgb(166, 96, 199); color: white; }
+#input-controls {
+    margin-top: 15px;
+    
 }
 
-#pause-btn {
-    background: #FFC107;
-    color: white;
-}
-
-#reset-btn {
-    background: #F44336;
-    color: white;
-}
-
-.controls button:hover {
-    opacity: 0.9;
+#input-controls input {
+    width: 50px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
 }
