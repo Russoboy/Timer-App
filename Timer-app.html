@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timer App</title>
-    <link rel="stylesheet" href="Timer-app.css">
+    <link rel="stylesheet" href="Timer-app-Advanced.css">
 </head>
 <body>
     <div class="timer-container">
         <h1>Timer App</h1>
-        <div id="timer-display">00:00:00</div>
+        <div id="timer-display">00:00:00:000</div> <!-- Updated to display milliseconds -->
+        
         <div class="controls">
             <button id="start-btn">Start</button>
             <button id="pause-btn">Pause</button>
+            <button id="resume-btn">Resume</button>
             <button id="reset-btn">Reset</button>
         </div>
+
+        <!-- Countdown Input Fields -->
+        <div id="input-controls">
+            <label>Hr:</label>
+            <input id="hour-down-timer" type="number" min="0" placeholder="0">
+            <label>Min:</label>
+            <input id="minute-down-timer" type="number" min="0" placeholder="0">
+            <label>Sec:</label>
+            <input id="seconds-down-timer" type="number" min="0" placeholder="0">
+            <button id="start-countdown">CountDown</button>
+        </div>
     </div>
-    <script src="Timer-app.js"></script>
+    <audio id="alert-sound" src="dungeon-sound-effect-240254.mp3" style="display: none;" >
+ 
+    </audio>
+
+    <script src="Timer-app-Advanced.js"></script>    
 </body>
 </html>
